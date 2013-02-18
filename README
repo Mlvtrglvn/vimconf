@@ -3,3 +3,7 @@ Installation:
 	git clone https://github.com/Mlvtrglvn/vimconf.git
 
 ln -s ~/.vim/vimrc ~/.vimrc
+
+Update:
+	git submodule init
+	git submodule update
