@@ -1,0 +1,3 @@
+[submodule "bundle/vimlatex"]
+	path = bundle/vimlatex
+	url = https://github.com/jcf/vim-latex.git
