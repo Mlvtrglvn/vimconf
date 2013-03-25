@@ -13,6 +13,8 @@ let g:Tex_ViewRule_pdf='okular'
 
 nnoremap <silent> <F8> :TlistToggle<CR>
 
+let Tlist_Process_File_Always=1
+
 if has("autocmd")
 	filetype plugin indent on
 	" filetype dependent settings
