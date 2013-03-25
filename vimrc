@@ -11,6 +11,7 @@ set ofu=syntaxcomplete#Complete
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_ViewRule_pdf='okular'
 
+nnoremap <silent> <F8> :TlistToggle<CR>
 
 if has("autocmd")
 	filetype plugin indent on
@@ -78,7 +79,7 @@ endfunction
 " load templates
 function Template_Load(filename)
 	if a:filename =~ "\.vhd$"
-		0r ~/.templates/vhdl
+		0r ~/.vim/templates/vhdl
 	endif
 endfunction
 
