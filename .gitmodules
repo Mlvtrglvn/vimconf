@@ -4,3 +4,6 @@
 [submodule "bundle/align"]
 	path = bundle/align
 	url = https://github.com/vim-scripts/Align.git
+[submodule "bundle/enhcommentify"]
+	path = bundle/enhcommentify
+	url = https://github.com/vim-scripts/EnhCommentify.vim.git
