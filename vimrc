@@ -5,11 +5,14 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-
 set ofu=syntaxcomplete#Complete
 
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_ViewRule_pdf='okular'
+
+"Standard tablulation size
+set tabstop=2
+set shiftwidth=2
 
 nnoremap <silent> <F8> :TlistToggle<CR>
 
