@@ -1,18 +1,15 @@
 [submodule "bundle/vimlatex"]
 	path = bundle/vimlatex
 	url = https://github.com/jcf/vim-latex.git
-<<<<<<< HEAD
-=======
 [submodule "bundle/align"]
 	path = bundle/align
 	url = https://github.com/vim-scripts/Align.git
 [submodule "bundle/enhcommentify"]
 	path = bundle/enhcommentify
 	url = https://github.com/vim-scripts/EnhCommentify.vim.git
-[submodule "vim-arduino"]
-	path = vim-arduino
-	url = https://github.com/kingbin/vim-arduino.git
 [submodule "bundle/vim-arduino"]
 	path = bundle/vim-arduino
 	url = https://github.com/kingbin/vim-arduino.git
->>>>>>> cba18a4... Added extra modules. Setup indentation rules.
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
