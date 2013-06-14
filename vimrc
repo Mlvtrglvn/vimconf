@@ -10,6 +10,9 @@ set ofu=syntaxcomplete#Complete
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_ViewRule_pdf='okular'
 
+"No automatic newlines
+set wrapmargin=0
+set textwidth=0
 "Standard tablulation size
 set tabstop=2
 set shiftwidth=2
