@@ -4,9 +4,9 @@ execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
+set term=xterm-256color
+
 set ofu=syntaxcomplete#Complete
-<<<<<<< HEAD
-=======
 
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_ViewRule_pdf='okular'
@@ -18,6 +18,24 @@ set textwidth=0
 set tabstop=2
 set shiftwidth=2
 
+"Xelatex and other vim-latex options
+let g:Tex_CompileRule_pdf='xelatex'
+let g:Tex_GotoError=0
+let g:Tex_MultipleCompileFormats='pdf'
+
+"Embedded python in latex
+au BufRead *.tex set syntax=pytex
+
+"Arduino configuration
+au BufRead,BufNewFile *.pde set filetype=arduino
+au BufRead,BufNewFile *.ino set filetype=arduino
+
+"Git fugitive statusline
+"set statusline+=%{fugitive#statusline()}
+
+"Powerline
+set laststatus=2
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 let Tlist_Process_File_Always=1
@@ -126,4 +144,3 @@ function TagTitle()
 		set titlestring=%<%f\ %([%{Tlist_Get_Tagname_By_Line()}]%)
 	endif
 endfunction
->>>>>>> cba18a4... Added extra modules. Setup indentation rules.
